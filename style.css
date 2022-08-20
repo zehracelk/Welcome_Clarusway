@@ -1,11 +1,14 @@
 @media (max-width: 568px) {
-    .background-container--image1,
-    .background-container--image2,
-    .background-container--image3,
-    .background-container--image4 {
-      background-attachment: scroll;
-    }
-}
+    .first_img,.second_img,.third_img,.fourth_img,.first_img_last
+    .first_img,.second_img,.third_img,.fourth_img,.first_img_last
+    .first_img,.second_img,.third_img,.fourth_img,.first_img_last
+    .first_img,.second_img,.third_img,.fourth_img,.first_img_last{
+       background-attachment: scroll;
+     }
+   }
+ 
+
+
 
 *{
     box-sizing: border-box;
@@ -13,16 +16,91 @@
     padding: 0%;
 
 }
-
+  
 body{
     font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.8rem;
   color: #666;
   height: 100%;
+
+}
+ 
+.first_img,.second_img,.third_img,.fourth_img,.first_img_last{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+ background-repeat: no-repeat;
+ opacity: 0.7;
+ position: relative;
+ background-attachment: fixed;
+  
+}
+.first_img{
+    background-image: url(./images/bg.jpg) ;
+
+}
+.second_img{
+    background-image: url(./images/bg2.jpg);
+}
+.third_img{
+    background-image: url(./images/bg3.jpg);
+}
+.fourth_img{
+    background-image: url(./images/bg4.jpg);
+}
+.first_img_last{
+    background-image: url(./images/bg.jpg);
+}
+img{
+    width:20rem;
+}
+
+h1{
+    
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: white;
+    letter-spacing: 0.5rem;
+}
+
+header{
+    background-color: black;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding:2rem;
+    width: fit-content;
+    text-align: center;
+    outline-offset: 1rem;
+    outline: 0.4rem inset purple;
+    line-height: 2.5rem;
+    
+    
+}
+
+.section_first,.section_second,.section_third,.section_fourth{
+    padding: 2rem;
+    text-align: center;
+     position: sticky;
+
+}
+.section_first,.section_third{
+    background-color: rgb(241, 241, 241);
+    color: #666;
+
+}
+.section_second,.section_fourth{
+   background-color: #282e34;
+    color: #ddd;
 }
 
 
+h2{
+    margin: 2rem;
+}
 
-
-
+section{
+    display: block;
+}
